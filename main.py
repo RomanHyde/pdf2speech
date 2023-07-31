@@ -3,6 +3,7 @@ from pathlib import Path
 import os
 import pyttsx3,PyPDF2
 
+# initilisation of libraries, 'book.pdf' can be renamed.
 pdfreader = PyPDF2.PdfReader(open('book.pdf', 'rb'))
 speaker = pyttsx3.init()
 
@@ -13,11 +14,10 @@ for page_num in range(number_of_pages):
     clean_text = text.strip().replace('\n', ' ')
     print(clean_text)
 
-# append speech.aiff to path
+# append speech.aiff to path, this can be renamed.
 out = str(Path('speech.aiff').resolve())
 print(out)
 
 speaker.save_to_file(clean_text, out)
 speaker.runAndWait()
-
 speaker.stop()
