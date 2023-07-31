@@ -1,3 +1,5 @@
+# pdf2speech
+
 A speech to text generator from PDF files.
 
 ## Libraries
@@ -19,4 +21,3 @@ An aiff file is generated from the text of the PDF.
 
 **Other notes:**
 'book.pdf' and 'speech.aiff' can be renamed, when renaming these keep the file extensions.
-# pdf2speech
